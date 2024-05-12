@@ -70,6 +70,8 @@ const ProductPage = () => {
     setSelected(id);
     setProduct(product);
   }, [products]);
+
+  
   const deleteProduct = useCallback((id) => {
     let newProducts = products.filter((product) => product.id !== id);
     setProducts(newProducts);

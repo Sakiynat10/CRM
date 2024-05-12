@@ -15,8 +15,7 @@ const LoginPage = ({setIsAuth}) => {
   }
   return (
     <div className="wrapper">
-      <div className="form-box login">
-        <form action="">
+        <form className="form-box login" action="">
           <h1>Login</h1>
           <div className="input-box">
             <input type="text" placeholder="Username" required />
@@ -35,7 +34,6 @@ const LoginPage = ({setIsAuth}) => {
           </div>
           <button onClick={login}>Login</button>
         </form>
-      </div>
     </div>
   )
 }

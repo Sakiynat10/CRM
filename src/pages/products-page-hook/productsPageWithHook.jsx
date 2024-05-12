@@ -5,7 +5,7 @@ import ProductForm from "../../components/form/ProductForm";
 import ProductHeader from "../../components/header/ProductHeader";
 import ProductTable from "../../components/table/productTable";
 import useCrud from "../../hooks/use-crud/useCrud";
-
+import "./productPage.scss"
 
 const ProductPageWithHook = () => {
   const nameRef = useRef();
@@ -56,10 +56,10 @@ const ProductPageWithHook = () => {
   return (
     <Container className="pt-3">
       <Row>
-        <Col md="4">
+        <Col className="form-content" md="4">
           <ProductForm ref={nameRef} {...productFormProps} />
         </Col>
-        <Col md="8">
+        <Col className="table-content" md="8">
           <ProductHeader {...productHeaderProps} />
           <ProductTable {...productTableProps} />
         </Col>
