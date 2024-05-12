@@ -55,11 +55,11 @@ const ProductPageWithHook = () => {
 
   return (
     <Container className="pt-3">
-      <Row>
-        <Col className="form-content" md="4">
+      <Row style={{gap:"40px" , display:"flex" , width:"100%" , flexDirection:"column" , alignItems:"center"}}>
+        <Col className="form-content" md="8">
           <ProductForm ref={nameRef} {...productFormProps} />
         </Col>
-        <Col className="table-content" md="8">
+        <Col className="table-content" md="12">
           <ProductHeader {...productHeaderProps} />
           <ProductTable {...productTableProps} />
         </Col>
